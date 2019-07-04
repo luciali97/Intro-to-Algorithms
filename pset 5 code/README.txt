@@ -1,0 +1,9 @@
+- globals.py contains parameters and helper methods. You may modify this file if you wish, but the online autograder will run your code using the original version of globals.py.
+- visualizer.py contains a Tkinter GUI to help you test and debug your code. IMPORTANT: the physics of Derrick's world are described here in the animation method. A summary:
+    - Derrick's world has discrete time. 
+    - During each timestep, Derrick may either accelerate left, accelerate right, hop, or make no change.
+    - If he is on a platform -- i.e. if the bottom of his character box intersects with a platform -- these actions will decrease his x-velocity, increase his x-velocity, or set his y-velocity to the fixed hopping velocity, respectively.
+    - If he is not on a platform, these actions/inputs do nothing at all. Instead, his y-velocity will change due to gravity.
+    - If he collides with a platform with some part other than his bottom edge, he is frozen/cannot proceed.
+- platforms.py contains the code skeleton we expect you to fill out.
+- tests.py contains a variety of test cases -- world descriptions and their associated maximum scores.
